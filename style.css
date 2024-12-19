@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(228, 228, 228); */
+  }
+
+  .india img {
+    width: 100%;
+    position: relative;
+    top: -10%;
+  }
+
+  .korea img {
+    width: 125%;
+    position: relative;
+    top: -24.5%;
+    z-index: 10;
+  }
+
+  .turkey img {
+    width: 110%;
+    position: relative;
+    top: -18%;
+    z-index: 9;
+  }
+
+  .indonesia {
+    width: 105%;
+  }
+
+  .indonesia img {
+    width: 100%;
+    position: relative;
+    top: -27.3%;
+    right: 2%;
+    z-index: 8;
+  }
+
+  .japan img {
+    width: 100%;
+    position: relative;
+    top: -45%;
+  }
+
+  .morocco img {
+    width: 110%;
+    position: relative;
+    top: -85%;
+  }
+
+  .philly img {
+    width: 100%;
+    position: relative;
+    top: -40%;
+  }
+
+  .denmark {
+    width: 110%;
+  }
+
+  .denmark img {
+    width: 100%;
+    position: relative;
+    top: -99%;
+    right: 8%;
+  }
+
+  .sweden {
+    grid-column: 2;
+  }
+
+  .sweden img {
+    width: 110%;
+    position: relative;
+    top: -210%;
+  }
+
+  .london {
+    grid-column: 4;
+    width: 110%;
+  }
+
+  .london img {
+    max-width: 100%;
+    position: relative;
+    top: -210%;
+    right: 8%;
+  }
+}
+
+.footer{
+  font-size: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
+
+  .background img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  
+  .background{
+    display: flex;
+  }
+  
+  .background img {
+    width: 90%;
+  }
+}
